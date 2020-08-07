@@ -1,8 +1,23 @@
 import React from 'react';
+import { Card, CardContent, Typography, Grid } from '@material-ui/core'; // using card design from @MaterialUI
+import styles from './Cards.module.css';
 
-const Cards = () => {
+// Creating grid that will space out and center Cards
+const Cards = (props) => {
+	console.log(props);
 	return (
-		<h1>Cards</h1>
+		<div className = {styles.container} >
+			<Grid container spacing = {3} justify="center"> 
+				<Grid item component={Card}>
+					<CardContent>
+						<Typography color="textSecondary" gutterBottom>Infected</Typography>
+						<Typography variant="h5">REAL DATA</Typography> 
+						<Typography color="textSecondary">REAL DATE</Typography>
+						<Typography variant="body2">Number of active cases of COVID-19</Typography>
+					</CardContent>
+				</Grid>
+			</Grid>
+		</div>
 	)
 }
 
