@@ -16,24 +16,26 @@ const Chart = () => {
 	});
 
 	const lineChart = (
-		dailyData.length ? (
-		<Line
+		dailyData.length
+		? (
+			<Line
 			data={{
-				labels: dailyData.map(({ date }) => date),
+				labels:dailyData.map(({ date }) => date),
 				datasets: [{
-				data: dailyData.map(({ confirmed }) => confirmed),
-				label: 'Infected',
-				borderColor:'#3333ff',
-				fill: true
+					data: dailyData.map(({ confirmed }) => confirmed),
+					label: 'Infected',
+					borderColor: '#3333ff',
+					fill: true
 				}, {
-					data: dailyData.map(( { deaths }) => deaths),
+					data: dailyData.map(({ deaths }) => deaths),
 					label: 'Deaths',
 					borderColor: 'red',
 					backgroundColor: 'rgba(255, 0, 0, 0.5)',
-					fill : true,
-				}],
+					fill: true,
+				}]
 			}}
-		/>) : null // if dailyData is available, return linechart, otherwise return null
+			/>
+		) : null
 	);
 
 	return (
