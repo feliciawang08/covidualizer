@@ -8,6 +8,7 @@ class App extends React.Component {
 
 	state = {
 		data: {}, // empty until populated
+		country: '',
 	}
 
 	async componentDidMount() {
@@ -16,13 +17,18 @@ class App extends React.Component {
 		this.setState({ data: fetchedData }); // populate data in state with fetchedData
 	}
 
+	handleCountryChange = async (country) => {
+		console.log(country);
+		// Fetch data, then set state
+	}
+
 	render() {
 		const { data } = this.state;
 
 		return (
 			<div className = {styles.container}>
 				<Cards data = {data} />
-				<CountryPicker />
+				<CountryPicker handleCountryChange={this.handleCountryChange} />
 				<Chart />
 			</div>
 		)
