@@ -20,6 +20,7 @@ const useGridStyles = makeStyles(({ breakpoints }) => ({
 const useStyles = makeStyles(() => ({
 	root: {
 		maxWidth: 343,
+		maxHeight: 350,
 		borderRadius: 20,
 		margin: 20,
 	},
@@ -42,7 +43,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 	}
 	return (
 		<div className = {styles.container} >
-			<Grid classes={gridStyles} container spacing = {4} wrap={'nowrap'}> 
+			<Grid classes={gridStyles} container spacing = {4}> 
 				<Grid item component={Card} xs={12} md={3} className={cx(cardStyles.root, shadowStyles.root)}>
 					<BrandCardHeader
 						image={'https://img.favpng.com/1/12/3/computer-icons-png-favpng-7SbJJ8GfuwRk8C3kFBUqYbbte.jpg'}	
@@ -76,7 +77,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 								/>
 							}
 							body={
-								'Number of confirmed confirmed recoveries from COVID-19.'
+								'Number of confirmed recoveries from COVID-19.'
 							}
 						/>
 					</CardContent>
