@@ -1,7 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
+    "\\src",
     "\\src\\api",
     "\\src\\components",
     "\\src\\components\\Cards",
@@ -9,6 +9,6 @@
     "\\src\\components\\CountryPicker",
     "\\src\\images"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\src\\App.module.css",
   "PreviewInSolutionExplorer": false
 }
