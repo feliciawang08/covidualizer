@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
 		maxWidth: 343,
 		maxHeight: 350,
 		borderRadius: 20,
-		margin: 20,
+		margin: 50,
 	},
 	content: {
 		padding: 24,
