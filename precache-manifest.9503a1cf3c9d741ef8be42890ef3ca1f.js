@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec5f93cc73567ded06f9aa06b139b163",
+    "revision": "ae31f86b685dee96207aeb0271bdd49a",
     "url": "/covidualizer/index.html"
   },
   {
-    "revision": "3aaf7d352d1f16238095",
-    "url": "/covidualizer/static/css/main.b8808ef7.chunk.css"
+    "revision": "83f5f95e686da5cb4953",
+    "url": "/covidualizer/static/css/main.06bdbaee.chunk.css"
   },
   {
-    "revision": "8e7278127afab13728df",
-    "url": "/covidualizer/static/js/2.7ca4517b.chunk.js"
+    "revision": "b7ad3266847f684f69f2",
+    "url": "/covidualizer/static/js/2.fef4b879.chunk.js"
   },
   {
     "revision": "bbe2dbbdaea8525fcc46934c5c58f863",
-    "url": "/covidualizer/static/js/2.7ca4517b.chunk.js.LICENSE.txt"
+    "url": "/covidualizer/static/js/2.fef4b879.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3aaf7d352d1f16238095",
-    "url": "/covidualizer/static/js/main.bf65c417.chunk.js"
+    "revision": "83f5f95e686da5cb4953",
+    "url": "/covidualizer/static/js/main.17064c1b.chunk.js"
   },
   {
     "revision": "c3ce8c5730a5fb8c26c1",
