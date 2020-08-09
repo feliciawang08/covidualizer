@@ -47,7 +47,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 				<Grid item component={Card} xs={12} md={3} className={cx(cardStyles.root, shadowStyles.root)}>
 					<BrandCardHeader
 						image={'https://img.favpng.com/1/12/3/computer-icons-png-favpng-7SbJJ8GfuwRk8C3kFBUqYbbte.jpg'}	
-						extra={'LAST UPDATED: ', new Date(lastUpdate).toDateString()}
+						extra={new Date(lastUpdate).toDateString()}
 					/>
 					<CardContent className={cardStyles.content}>
 						<TextInfoContent
