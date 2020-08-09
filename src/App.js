@@ -35,12 +35,12 @@ class App extends React.Component {
 				<Chart data = { data } country = { country }  /> 
 				<div>
 					<p>
-						Learn how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">stop the spread.</a> 
+						Learn how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank" rel="noopener noreferrer">stop the spread.</a> 
 					</p>
 				</div> 
 				<div>
 					<p>
-						<a href="https://github.com/feliciawang08" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank"> LinkedIn</a>
+						<a href="https://github.com/feliciawang08" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
 					</p>
 				</div>
 				<div className={styles.bottom}>
