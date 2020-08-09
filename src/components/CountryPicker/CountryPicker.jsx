@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { NativeSelect, FormControl } from '@material-ui/core';
+import { FormControl } from '@material-ui/core';
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import { TextField } from "@material-ui/core";
 
 import styles from './CountryPicker.module.css';
 
@@ -21,10 +23,15 @@ const CountryPicker = ({ handleCountryChange }) => {
 	// List of countries
 	return (
 		<FormControl className = {styles.formControl}>
-			<NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
-				<option value="global">Global</option>
-				{fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}
-			</NativeSelect>
+			<Autocomplete
+				onChange={(event, newValue) => {
+					handleCountryChange(newValue);
+				}}
+				options={fetchedCountries}
+				renderInput={(params) => (
+					<TextField {...params} label="Select a Country" variant="outlined" />
+				)}
+			/>
 		</FormControl>
 	)
 }
