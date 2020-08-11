@@ -17,6 +17,8 @@ body {
 .bottom {
 	position: fixed;
 	bottom: 0;
+	font-family: Arial;
+	font-size: 11px;
 }
 
 @media (max-width: 770px) {

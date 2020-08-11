@@ -4,6 +4,8 @@ import styles from './App.module.css'
 import { fetchData } from './api';
 import titleImage from './images/covidualizer.png';
 import Emoji from 'react-emoji-render';
+import { IconContext } from "react-icons"
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 
 class App extends React.Component {
 
@@ -26,6 +28,7 @@ class App extends React.Component {
 
 	render() {
 		const { data, country } = this.state;
+		const arialFont = { fontFamily: 'Arial'};
 
 		return (
 			<div className={styles.container}>
@@ -34,15 +37,15 @@ class App extends React.Component {
 				<CountryPicker handleCountryChange={this.handleCountryChange} />
 				<Chart data = { data } country = { country }  /> 
 				<div>
-					<p>
+					<p style={ arialFont }>
 						Learn how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank" rel="noopener noreferrer">stop the spread.</a> 
 					</p>
 				</div> 
-				<div>
-					<p>
-						<a href="https://github.com/feliciawang08" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
-					</p>
-				</div>
+				<IconContext.Provider value={{ color: "black", size: 30, className: "social-icons" }}>
+					<div>
+						<a href="https://github.com/feliciawang08" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a> <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
+					</div>
+				</IconContext.Provider>
 				<div className={styles.bottom}>
 					<Emoji text="Made with :heart: by Felicia Wang | Est. Aug. 2020" /> 
 			</div>
