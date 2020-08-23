@@ -1,6 +1,6 @@
 # Covidualizer
 COVID-19 Visualizer designed in ReactJS.<br/>
-Much deserved credit goes to [this API](https://covid19.mathdro.id/api), which provided statistics globally and for each country.
+Much deserved credit goes to [this API](https://covid19.mathdro.id/api), which provided both global and nationwide statistics.
 
 ## Dependencies:
 Dependencies include (but are not limited to)
