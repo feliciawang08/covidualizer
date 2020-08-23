@@ -5,7 +5,7 @@ import { fetchData } from './api';
 import titleImage from './images/covidualizer.png';
 import Emoji from 'react-emoji-render';
 import { IconContext } from "react-icons"
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook, AiOutlineInstagram } from "react-icons/ai"
 
 class App extends React.Component {
 
@@ -43,7 +43,7 @@ class App extends React.Component {
 				</div> 
 				<IconContext.Provider value={{ color: "black", size: 30, className: "social-icons" }}>
 					<div>
-						<a href="https://github.com/feliciawang08" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a> <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
+						<a href="https://www.facebook.com/felicia.wang.08" target="_blank" rel="noopener noreferrer"><AiFillFacebook /></a>  <a href="https://www.instagram.com/7_felicia_w/" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram /></a>  <a href="https://github.com/feliciawang08" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>  <a href="https://www.linkedin.com/in/felicia-wang-08/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
 					</div>
 				</IconContext.Provider>
 				<div className={styles.bottom}>

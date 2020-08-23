@@ -96,7 +96,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 								/>
 							}
 							body={
-								'Number of confirmed confirmed deaths from COVID-19.'
+								'Number of confirmed deaths from COVID-19.'
 							}
 						/>
 					</CardContent>
